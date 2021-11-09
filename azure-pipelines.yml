@@ -38,3 +38,6 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+    - task: WhiteSource@21
+      inputs:
+        projectName: 'az500'
